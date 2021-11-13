@@ -1,0 +1,129 @@
+body{
+    font-family: 'Inter', sans-serif; 
+    background-color: rgb(241, 242, 241); 
+}
+
+#head{  
+  width: 612px  ;
+  display:block;
+  margin:auto;
+}
+
+
+#banner-portada{
+    width: 100%;
+}
+
+
+.logo-animado{
+    animation: logo 5s 3;
+
+}
+
+@keyframes logo {
+
+    50% {transform:rotatey(180deg) ;   }   
+}
+
+nav{
+ position: sticky;
+ top: 0px;
+ background-color: rgb(0, 146, 70);  
+ display: flex;
+ justify-content: space-around;
+
+}
+.franja-superior ul li{  
+    list-style-type: none;
+    display: inline;
+    margin: auto;
+    padding-right: 5rem;
+    align-items: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    color: white;
+    font-size: 25px; 
+
+    /* lo que viene a continuacion es para el hover */
+    transform: translate(50px, 10px);
+    transform:rotate(50deg);
+    transform: scale(2,2); 
+    transform: skew(20deg, 10deg);
+    transition: all .1s ease-in-out;       
+}
+
+/* la siguente llamada a la clase navbar es para que ande el hover*/
+.navbar:hover{
+    background-color: rgb(113, 177, 189);
+    
+     transform: skewY(20deg);    
+}
+
+ 
+#container-all{
+    width: 95%;
+    margin: auto;
+    padding: 0px;
+    margin-top: -9px;
+    border-top: 6px;
+}
+
+#que-es-hidroponia img{
+    width: 500px;
+    float: right;
+    padding-left: 50px;
+}
+
+.maintext{
+    text-align: justify;
+}
+
+#ventajas ul li{
+
+    padding-left: 0px;
+    display:block;
+         
+    padding-top: 1px; 
+    align-items: left;
+}
+
+.listascss {
+    list-style-image: url(../img/vineta4.png);
+
+}
+
+#tabla{
+    width: 95%;
+    text-align: center;
+    padding-right: 10em;
+    font-size: 1.3em;
+}
+
+#invernadero{
+    padding-top: 10px;
+    width: 100%;
+}
+
+footer {
+
+    background-color: rgb(255, 255, 255);  
+    display: flex;
+    position: sticky;
+    bottom: 0px;
+   }
+
+.franja-inferior ul li{  
+    list-style-type: none;
+    display: inline;
+    margin: auto;
+    padding-right: 10rem;
+    align-items: center;
+ 
+}
+
