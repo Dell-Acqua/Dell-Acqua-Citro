@@ -1,0 +1,86 @@
+@import "variables/variables.scss";
+
+
+
+body{
+    font-family: 'Inter', sans-serif; 
+    background-color: $color-main; 
+}
+
+#head{  
+  width: 612px  ;
+  display:block;
+  margin:auto;
+}
+
+.logo-animado{
+    animation: logo 5s 3;
+}
+
+@keyframes logo {
+    50% {transform:rotatey(180deg) ;   }   
+}
+
+
+.divar {
+    display: flex;
+    justify-content: space-around;
+}
+ .menu{
+ position: sticky;
+ top: 0px;
+
+} 
+
+.listascss {
+    list-style-image: url(../img/vineta4.png);
+
+}
+
+.pie {
+    background-color: $color-pie;
+    position: sticky;
+    bottom: 0px;
+    padding-left: $separacion10;
+    padding-right: $separacion10;
+
+   }
+
+/*ACA USAMOS OPERACIONES*/   
+.primera {
+    .que-es-hidroponia{
+        padding-top: $separacion10*2;
+    }
+}
+
+.tipos{
+    padding-top: $separacion50/2;
+}
+
+.tipos2{
+    padding-top: $separacion10*8;
+}
+
+/*Aca usamos mixins*/
+
+@mixin caja ($porcentaje){
+    width: $porcentaje;
+ }
+
+ .plantines{
+     img{
+        @include caja(100%);
+     }
+ }
+
+
+ @media (max-width:768px){
+    .plantines{
+        display: none;
+    }
+ }
+
+ .card-title{
+     font-weight: bold;
+     justify-content: center;
+ }
