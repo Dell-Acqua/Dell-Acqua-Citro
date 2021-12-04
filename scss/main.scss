@@ -21,16 +21,19 @@ body{
     50% {transform:rotatey(180deg) ;   }   
 }
 
-
-.divar {
-    display: flex;
-    justify-content: space-around;
-}
  .menu{
  position: sticky;
  top: 0px;
 
 } 
+
+
+.nav-item{
+    padding-left: $separacion10*5;
+    padding-right: $separacion10*5;
+ }
+
+
 
 .listascss {
     list-style-image: url(../img/vineta4.png);
@@ -48,9 +51,25 @@ body{
 
 /*ACA USAMOS OPERACIONES*/   
 .primera {
-    .que-es-hidroponia{
-        padding-top: $separacion10*2;
-    }
+    padding-top: $separacion10*2;
+
+}
+
+.marco{
+    padding-top: $separacion10*2;
+    padding-bottom: $separacion10*2;
+    border:3px solid $color-bordes;
+    border-radius:22px;
+}
+
+
+.titulo{
+    text-align: center;
+}
+
+.ventajas{
+    padding-left: $separacion10*2;
+
 }
 
 .tipos{
@@ -59,6 +78,12 @@ body{
 
 .tipos2{
     padding-top: $separacion10*8;
+}
+
+.etiqueta-producto{
+    background-color: $color-main;
+    font-weight: bold;
+    border-radius: 22px;
 }
 
 /*Aca usamos mixins*/
